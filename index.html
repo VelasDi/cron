@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./style.css' >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/social_icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <title>Cron</title>
+</head>
+    <body class='body'>
+        <div class='page__container'>
+            <header class='header'>
+                <div class='header__items'>
+                    <img src='./images/лого 1.svg' alt='Логотип' class='header__logo'/>
+                    <div class='header__menu'>
+                        <div class='header__links_list'>
+                            <div class='header__list_items'>
+                                <a href='#prc' target='_self' class='header__link'>Услуги&nbsp;и&nbsp;цены</a>
+                                <a href='#wrkspc' target='_self' class='header__link'>Как&nbsp;это&nbsp;работает</a>
+                                <a href='#advntgts' target='_self' class='header__link'>Преимущества</a>
+                                <a href='#rws' target='_self' class='header__link'>Отзывы</a>
+                            </div>
+                            <hr class='header_line'>
+                        </div>
+                        <div class='header__contacts'>
+                            <p class='header__contacts_text'>Звонок по России бесплатный</p>
+                            <p class='header__contacts_phone'>8-800-551-65-10</p>
+                        </div>
+                    </div>
+                    <nav class='header__column-social'>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                              <a href='https://www.facebook.com/Cron.iCron/' target="_blank" class="footer__column-link"> 
+                                  <div class='social__icon_body'>
+                                      <img  class="footer__social-icon footer__social-icon_facebook" src="./images/social_icons/fb.png" alt='facebook'>
+                                  </div>
+                              </a>
+                            </li>      
+                            <li class="footer__list-item">
+                              <a href='https://vk.com/crondev' target="_blank" class="footer__column-link">
+                                  <div class='social__icon_body'>
+                                      <img  class="footer__social-icon footer__social-icon_vk" src="./images/social_icons/vk.svg" alt='VK'>
+                                  </div>
+                               </a>  
+                            </li>
+            
+                            <li class="footer__list-item">
+                              <a href='https://www.instagram.com/cron_i_cron/' target="_blank" class="footer__column-link">
+                                  <div class='social__icon_body'>
+                                      <img  class="footer__social-icon footer__social-icon_inst" src="./images/social_icons/inst.png" alt='inst'>
+                                  </div>
+                              </a> 
+                            </li>
+                            <li class="footer__list-item">
+                              <a href='https://www.youtube.com/channel/UC5AAYhE6jMw5wZ8RUApQmvg?view_as=subscriber' target="_blank" class="footer__column-link"> 
+                                  <div class='social__icon_body'>
+                                      <img  class="footer__social-icon footer__social-icon_youtube" src="./images/social_icons/yt.svg" alt='youtube'>
+                                  </div>
+                              </a>
+                            </li>
+                            <li class="footer__list-item">
+                              <a href='https://t.me/crondev' target="_blank" class="footer__column-link"> 
+                                  <div class='social__icon_body'>
+                                      <img  class="footer__social-icon footer__social-icon_telegram" src="./images/social_icons/tg.svg" alt='telegram'>
+                                  </div>
+                              </a>
+                            </li> 
+                          </ul>
+                    </nav> 
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                    
+                        <ul class="menu__box">
+                          <li><a class="menu__item" href="#">Заказать консультацию</a></li>
+                                <li><a class="menu__item" href='#prc' target='_self'>Услуги&nbsp;и&nbsp;цены</a></li>
+                                <li><a class="menu__item" href='#wrkspc' target='_self'>Как&nbsp;это&nbsp;работает</a></li>
+                                <li><a class="menu__item" href='#advntgts' target='_self'>Преимущества</a></li>
+                                <li><a class="menu__item" href='#rws' target='_self'>Отзывы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 class='header__title'>Аутсорсинг программистов 1С</h1>
+                <p class='header__subtitle'>Услуги по разработке 1С по всей территории РФ</p>
+                <div class="page-wrapper">
+                    <a class="header__button trigger" href="#">заказать консультацию</a>
+                  </div>
+             
+                  <!-- МОДАЛЬНОЕ ОКНО-->
+                  <div class="modal-wrapper">
+                    <div class="head"></div>
+                    <div class="modal">
+                      <div class="content">
+                          <div class="good-job">
+                            <p class='contact-form__title_big'>заказать консультацию</p>
+                            <form class="form_modal_window" action="">
+                              <input type="text" name="name" placeholder="имя*" required>
+                              <input type="phone" name="phone" placeholder="телефон*" required>
+                              <input class="form_sub" name="sub" type="submit" value="оставить заявку">
+                            </form>
+                            <div id="erconts"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-wrapperfacts">
+                    <div class="head"></div>
+                    <div class="modal">
+                      <div class="content">
+                          <div class="good-job">
+                            <p class='contact-form__title_big'>заказать работы по факту</p>
+                            <form class="form_modal_window" action="">
+                              <input type="text" name="name" placeholder="имя*" required>
+                              <input type="phone" name="phone" placeholder="телефон*" required>
+                              <input class="form_sub" name="sub" type="submit" value="оставить заявку">
+                            </form>
+                            <div id="erconts"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-wrapperfulltime">
+                    <div class="head"></div>
+                    <div class="modal">
+                      <div class="content">
+                          <div class="good-job">
+                            <p class='contact-form__title_big'>заказать разработчик на FULL-TIME</p>
+                            <form class="form_modal_window" action="">
+                              <input type="text" name="name" placeholder="имя*" required>
+                              <input type="phone" name="phone" placeholder="телефон*" required>
+                              <input class="form_sub" name="sub" type="submit" value="оставить заявку">
+                            </form>
+                            <div id="erconts"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-wrapperfix">
+                    <div class="head"></div>
+                    <div class="modal">
+                      <div class="content">
+                          <div class="good-job">
+                            <p class='contact-form__title_big'>заказать работы по оценке</p>
+                            <form class="form_modal_window" action="">
+                              <input type="text" name="name" placeholder="имя*" required>
+                              <input type="phone" name="phone" placeholder="телефон*" required>
+                              <input class="form_sub" name="sub" type="submit" value="оставить заявку">
+                            </form>
+                            <div id="erconts"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle_header" type="checkbox" />
+                    <label class="menu__btn_header" for="menu__toggle_header">
+                        <span></span>
+                    </label>
+                
+                    <div class="menu__box_header">
+                        <form class="contact-form_header" id="contact-form_1" method="POST" enctype="multipart/form-data">
+                            <p class="contact-form__title_header">Заказать консультацию</p>
+                            <p class="contact-form__description_header"></p>
+                            <div class="contact-form__input-wrapper_header">
+                                <input name="name" type="text" class="contact-form__input_header contact-form__input_name"
+                                    placeholder="Имя*">
+                                <div class="contact-form__error_header contact-form__error_name"></div>
+                            </div>
+                            
+                            <div class="contact-form__input-wrapper_header">
+                                <input name="tel" type="tel" class="contact-form__input_header contact-form__input_tel"
+                                    placeholder="Телефон*">
+                                <div class="contact-form__error_header contact-form__error_tel"></div>
+                            </div>
+            
+
+
+
+
+                
+                            <button class="contact-form__button_header" type="submit"> Оставить заявку </button>
+                        </form>
+                    </div>
+                </div>
+                <nav class='header__info'>
+                    <ul class='header__info_list'>
+                        <li class='header__info_items'>
+                            <img src='./images/iconfinder_group2_309041 1.svg' alt='Тут должна быть картинка' class='header__info_logo'/>
+                            <p class='header__info_text'>38 квалифицированных специалистов</p>
+                        </li>
+                        <li class='header__info_items'>
+                            <img src='./images/Untitled-2.png' alt='Тут должна быть картинка' class='header__info_logo'/>
+                            <p class='header__info_text'>Ставки от 1300 руб./час</p>
+                        </li>
+                        <li class='header__info_items'>
+                            <img src='./images/russia 1.svg' alt='Тут должна быть картинка' class='header__info_logo'/>
+                            <p class='header__info_text'>Удаленно по всей территории РФ</p>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+            <main class='content'>
+                <section class='price' id='prc'>
+
+                    <h3 class='price__title'>Услуги и цены</h3>
+                    <div class='price__cards'>
+                        <div class='price__card'>
+                            <img src='./images/chek.png' alt='Чек' class='price__card-logo'/>
+                            <p class='price__card-title'>Работы по оценке</p>
+                            <p class='price__card-numbers'>1900</p>
+                            <p class='price__card-subtitle'>рублей в час</p>
+                            <p class='price__card-text'>Фиксированная оплата по предварительной оценке</p>
+
+                            <a class="price__button triggerfix" href="#">заказать</a>
+
+                        </div>
+
+
+                        <div class='price__white-card'>
+
+                            <img src='./images/avatar.svg' alt='аватар' class='price__card-logo_white'/>
+                            <p class='price__card-title price__card-title_white'>Разработчик на FULL-TIME</p>
+                            <p class='price__card-numbers'>middle-1300 senior-1500</p>
+                            <p class='price__card-subtitle'>рублей в час</p>
+                            <p class='price__card-text'>Программист 1С выделяется на 8 часов в день</p>
+
+                            <a class="price__button price__button_blue triggerfulltime" href="#">заказать</a>
+
+                            <p class='price__card-rate'>* Тариф доступен при сроке от 1 месяца</p>
+                        </div>
+
+
+                        <div class='price__card_fact'>
+                            <img src='./images/time-money.svg' alt='часы' class='price__card-logo'/>
+                            <p class='price__card-title '>Работы по факту</p>
+                            <p class='price__card-numbers'>1700</p>
+                            <p class='price__card-subtitle'>рублей в час</p>
+                            <p class='price__card-text'>Оплата по фактическим трудозатратам</p>
+
+                            <a class="price__button triggerfacts" href="#">заказать</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='lead'>
+                    <h3 class='lead__title'>Мы Вам необходимы, если</h3>
+                    <div class='lead__table'>
+                        <img class='lead__image' src='./images/proger.jpg' alt='Программист'/>
+                        <div class='lead__paragraphs'>
+                            <p class='lead__paragraph'>Есть острая необходимость в услугах программиста 1С, но держать большой штат невыгодно.</p>
+                            <p class='lead__paragraph'>Штатный 1С программист на больничном или в отпуске, а решать задачи нужно в срочном порядке.</p>
+                            <p class='lead__paragraph'>Предприятию необходима квалифицированная помощь в разработке или дополнительной поддержке проектов.</p>
+                            <p class='lead__paragraph'>Вы франчайзинг 1С, взяли масштабный проект и своих мощностей не хватает.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class='workspace' id='wrkspc'>
+                    <h3 class='workspace__title'>Как это работает?</h3>
+                    <nav class='workspace__move'>
+                        <ul class='workspace__move_list'>
+                            <li class='workspace__move_items'>
+                                <p class='workspace__move_title'>Шаг 1: Знакомство</p>
+                                <p class='workspace__move_text'>Позвоните нам по телефону 8 800 551 65 10  /  8 495 266 65 10 или напишите на почту: info@i-cron.ru.</p>
+                            </li>
+                            <li class='workspace__move_items'>
+                                <p class='workspace__move_title'>Шаг 2: Постоянное сотрудничество</p>                               
+                                <p class='workspace__move_text'>После тестового задания готовы приступить к выполнению ваших задач на регулярной основе.</p>
+                            </li>
+                            <li class='workspace__move_items'>
+                                <p class='workspace__move_title'>Шаг 3: Оплата</p>  
+                                <p class='workspace__move_text'>Ежемесячно отправляем отчеты о проделанной работе, подписываем акты и оплачиваем счета.</p>
+                            </li>
+                            <li class='workspace__move_items'>
+                                <p class='workspace__move_title'>Шаг 4. Обратная связь</p>  
+                                <p class='workspace__move_text'>Мы регулярно проводим контроль качества нашей работы с целью стать  лучшим партнером для Вас.</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class='advantages' id='advntgts'>
+                    <h3 class='advantages__title'>Преимущества аутсорсинга</h3>
+                    <article class='advantages__table'>
+                        <div class='advantages__card'>
+                            <img class='advantages__image' src='./images/adventages/iconfinder_content-form-contract-article-paper_3209382 1.png' alt='Документы'/>
+                            <p class='advantages__card_title'>Работа по SLA</p>
+                            <p class='advantages__text'>Подписываем соглашение об уровне сервиса. Утверждаем доступность специалистов, время реакции, сроки работ. Внедряем европейский стандарт обслуживания.</p>
+                        </div>
+                        <div class='advantages__card'>
+                            <img class='advantages__image' src='./images/adventages/iconfinder_Speedometer_605498 1.png' alt='Спидометор'/>
+                            <p class='advantages__card_title'>Опыт и скорость</p>
+                            <p class='advantages__text'>В нашем штате имеется 38 опытных разработчиков-программистов и консультантов. За счет обмена опытом ускоряем решение типовых задач в 1С на 30%.</p>
+                        </div>
+                        <div class='advantages__card'>
+                            <img class='advantages__image' src='./images/adventages/Union.png' alt='Сейф'/>
+                            <p class='advantages__card_title'>Безопасность</p>
+                            <p class='advantages__text'>Договор с клиентом подразумевает коммерческую тайну. Дополнительно сотрудники подписывают соглашение о конфиденциальности внутри компании.</p>
+                        </div>
+                        <div class='advantages__card'>
+                            <img class='advantages__image' src='./images/adventages/Group 30.png' alt='Валюта'/>
+                            <p class='advantages__card_title'>От 1300 руб/час</p>
+                            <p class='advantages__text'>Ставки начинаются от 1 300 руб./час. Это ниже цен в обеих столицах: Москва и Санкт-Петербург. При работе вдолгую и на больших объемах вы экономите половину IT-бюджета!</p>
+                        </div>
+                        <div class='advantages__card'>
+                            <img class='advantages__image' src='./images/adventages/Union22.png' alt='Гарантия'/>
+                            <p class='advantages__card_title'>Гарантия 24 месяца</p>
+                            <p class='advantages__text'>Наша компания предоставляет гарантию на разработку, 2 года. Все выявленные ошибки в течении данного периода, мы устраним за свой счет.</p>
+                        </div>
+                        <div class='advantages__card'>
+                            <img class='advantages__image' src='./images/adventages/iconfinder_customer_service_support_centre_3200458 1.png' alt='Обратная связь'/>
+                            <p class='advantages__card_title'>Всегда на связи</p>
+                            <p class='advantages__text'>Постоянная доступность - один из принципов нашей работы. Мы читаем почту каждые 15 минут. Оперативно отвечаем на сообщения в скайпе и на телефонные звонки.</p>
+                        </div>
+                </section>
+
+                <section class='featback'>
+                        <h2 class="featback__contact-form__title">Оставьте заявку, и мы перезвоним Вам в течение 5 минут</h2>
+                        <form class="featback__contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+                            <p class="featback__contact-form__description"></p>
+                            <div class="featback__contact-form__input-wrapper">
+                                <input name="name" type="text" class="featback__contact-form__input featback__contact-form__input_name"
+                                    placeholder="Имя*">
+                                <div class="featback__contact-form__error featback__contact-form__error_name"></div>
+                            </div>
+                            
+                            <div class="featback__contact-form__input-wrapper">
+                                <input name="tel" type="tel" class="featback__contact-form__input featback__contact-form__input_tel"
+                                    placeholder="Телефон*">
+                                <div class="featback__contact-form__error featback__contact-form__error_tel"></div>
+                            </div>              
+                            <button class="featback__contact-form__button" type="submit"> Отправить </button>
+                        </form>
+                        </div>
+                </section>
+
+                <section class='facts'>
+                    <img src='./images/adventages/Group.png' alt='кольцо' class='facts__ring'/>
+                    <h2 class='facts__title'>Цифры и факты о нас</h2>
+                    <div class='facts__table'>
+                        <div class='facts__items'>
+                            <img src='./images/adventages/krug25.png' alt='кольцо' class='facts__circle1'/>
+                            <p class='facts__numbers'>3</p>
+                            <p class='facts__text'>года на рынке</p>
+                        </div>
+                        <div class='facts__items'>
+                            <img src='./images/adventages/krug25.png' alt='кольцо' class='facts__circle2'/>
+                            <p class='facts__numbers'>43</p>
+                            <p class='facts__text'>проекта</p>
+                        </div>
+                        <div class='facts__items'>
+                            <img src='./images/adventages/krug25.png' alt='кольцо' class='facts__circle3'/>
+                            <p class='facts__numbers'>42</p>
+                            <p class='facts__text'>клиента</p>
+                        </div>
+                        <div class='facts__items'>
+                            <img src='./images/adventages/krug25.png' alt='кольцо' class='facts__circle4'/>
+                            <p class='facts__numbers'>38</p>
+                            <p class='facts__text'>квалифицированных специалистов</p>
+                        </div>
+                    </div>
+                </section>
+                <section class='reviews' id='rws'>
+                    <h2 class='reviews__title'>Отзывы</h2>
+                    <section id="slider_bl">
+                        <div class="wrapper">
+                          <input checked type=radio name="slider" id="slide1" />
+                          <input type=radio name="slider" id="slide2" />
+                          <input type=radio name="slider" id="slide3" />
+                          <input type=radio name="slider" id="slide4" />
+                          <div class="slider-wrapper">
+                            <div class=inner>
+                              <article>
+                                  <div class='reviews__grid'>
+                                    <img class='reviews__foto' src="./images/rev.jpg" />
+                                    <div class='reviews__items'>
+                                        <h2 class='reviews__items_title'>Unis</h2>
+                                        <p class='reviews__items_text'>С компанией Крон начали работать, когда на одном предприятии не хватало сильного программиста по конфигурации “Документооборот 2”. Во время работы, сотрудница компании Крон показала себя как очень грамотный и профессиональный программист. Все поставленные задачи были выполнены качственно и в срок. Оказывались консультации по реализованным решениям, нареканий к качеству работ не возникало.</p>
+                                        <p class='reviews__items_footer'>Рекомендуем компанию “КРОН” как команду профессиональных программистов 1С.</p>
+                                    </div>
+                                  </div>
+                              </article>
+                              <article>
+                                <div class='reviews__grid'>
+                                    <img class='reviews__foto' src="./images/rev.jpg" />
+                                    <div class='reviews__items'>
+                                        <h2 class='reviews__items_title'>Unis</h2>
+                                        <p class='reviews__items_text'>С компанией Крон начали работать, когда на одном предприятии не хватало сильного программиста по конфигурации “Документооборот 2”. Во время работы, сотрудница компании Крон показала себя как очень грамотный и профессиональный программист. Все поставленные задачи были выполнены качственно и в срок. Оказывались консультации по реализованным решениям, нареканий к качеству работ не возникало.</p>
+                                        <p class='reviews__items_footer'>Рекомендуем компанию “КРОН” как команду профессиональных программистов 1С.</p>
+                                    </div>
+                                  </div>
+                              </article>
+                              <article>  
+                                <div class='reviews__grid'>
+                                    <img class='reviews__foto' src="./images/rev.jpg" />
+                                    <div class='reviews__items'>
+                                        <h2 class='reviews__items_title'>Unis</h2>
+                                        <p class='reviews__items_text'>С компанией Крон начали работать, когда на одном предприятии не хватало сильного программиста по конфигурации “Документооборот 2”. Во время работы, сотрудница компании Крон показала себя как очень грамотный и профессиональный программист. Все поставленные задачи были выполнены качственно и в срок. Оказывались консультации по реализованным решениям, нареканий к качеству работ не возникало.</p>
+                                        <p class='reviews__items_footer'>Рекомендуем компанию “КРОН” как команду профессиональных программистов 1С.</p>
+                                    </div>
+                                  </div>
+                              </article>
+                              <article>
+                                <div class='reviews__grid'>
+                                    <img class='reviews__foto' src="./images/rev.jpg" />
+                                    <div class='reviews__items'>
+                                        <h2 class='reviews__items_title'>Unis</h2>
+                                        <p class='reviews__items_text'>С компанией Крон начали работать, когда на одном предприятии не хватало сильного программиста по конфигурации “Документооборот 2”. Во время работы, сотрудница компании Крон показала себя как очень грамотный и профессиональный программист. Все поставленные задачи были выполнены качственно и в срок. Оказывались консультации по реализованным решениям, нареканий к качеству работ не возникало.</p>
+                                        <p class='reviews__items_footer'>Рекомендуем компанию “КРОН” как команду профессиональных программистов 1С.</p>
+                                    </div>
+                                  </div>
+                              </article>
+                            </div>
+                          </div>
+                          <div class="slider-prev-next-control">
+                            <label for=slide1></label>
+                            <label for=slide2></label>
+                            <label for=slide3></label>
+                            <label for=slide4></label>
+                          </div>
+                          <div class="slider-dot-control">
+                            <label for=slide1></label>
+                            <label for=slide2></label>
+                            <label for=slide3></label>
+                            <label for=slide4></label>
+                          </div>
+                        </div>
+                    </section>
+
+
+                </section>
+                <section class='trast'>
+                    <h2 class='trast__title'>Нам Доверяют</h2>
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                        <img src="./test work/Снимок.PNG" style="width:80% ">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="./test work/Снимок1.PNG" style="width:80%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="./test work/Снимок2.PNG" style="width:80% ">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <img src="./test work/Снимок3.PNG" style="width:80% ">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="./test work/Снимок4.PNG" style="width:80% ">
+                        </div> 
+
+                        <div class="mySlides fade">
+                            <img src="./test work/Снимок5.PNG" style="width:80% ">
+                        </div> 
+
+                        <div class="mySlides fade">
+                            <img src="./test work/Снимок6.PNG" style="width:80% ">
+                        </div> 
+
+                        <div class="mySlides fade">
+                            <img src="./test work/Снимок7.PNG" style="width:80% ">
+                        </div> 
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                    </div>
+
+
+                </section>    
+
+            </main>
+            <footer class='footer'>
+                <img src='./images/adventages/Group.png' alt='кольцо' class='footer__ring'/>
+                <div class='footer__featback'>
+                    <h2 class='footer__title'>Экономьте время с профессионалами c пользой для Вашего бизнеса</h2>
+                
+                    <div class="form-wrapper">
+
+                        <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+                            <p class="contact-form__title">Закажите разработчика</p>
+                            <p class="contact-form__description"></p>
+                            <div class="contact-form__input-wrapper">
+                                <input name="name" type="text" class="contact-form__input contact-form__input_name"
+                                    placeholder="Имя*">
+                                <div class="contact-form__error contact-form__error_name"></div>
+                            </div>
+                            
+                            <div class="contact-form__input-wrapper">
+                                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel"
+                                    placeholder="Телефон*">
+                                <div class="contact-form__error contact-form__error_tel"></div>
+                            </div>
+                
+                            <div class="contact-form__input-wrapper"> 
+                                <input name="email" type="email" class="contact-form__input contact-form__input_email"
+                                    placeholder="Электронная почта*">
+                                <div class="contact-form__error contact-form__error_email"></div>
+                            </div>
+                
+                            <button class="contact-form__button" type="submit"> Оставить заявку </button>
+                        </form>
+                </div>
+                    
+                </div>
+                <div class='footer__navigation'>
+                    <div class='footer__contacts'>
+                        <img src='./images/лого 2.svg' alt='Логотип' class='footer__logo'/>
+                        <div class='footer__contacts_numbers'>
+                            <p class='footer__contacts_items'>8-800-551-65-10</p> 
+                            <p class='footer__contacts_items'>8-495-266-65-10</p>
+                            <p class='footer__contacts_items'>info@i-cron.ru</p>
+                        </div>
+                    </div>
+                
+                    <nav class='footer__column-social'>
+                        <ul class="footer__list">
+                          <li class="footer__list-item">
+                            <a href='https://www.facebook.com/Cron.iCron/' target="_blank" class="footer__column-link"> 
+                                <div class='social__icon_body'>
+                                    <img  class="footer__social-icon footer__social-icon_facebook" src="./images/social_icons/fb.png" alt='facebook'>
+                                </div>
+                            </a>
+                          </li>      
+                          <li class="footer__list-item">    
+                            <a href='https://vk.com/crondev' target="_blank" class="footer__column-link">
+                                <div class='social__icon_body'>
+                                    <img  class="footer__social-icon footer__social-icon_vk" src="./images/social_icons/vk.svg" alt='VK'>
+                                </div>
+                             </a>  
+                          </li>
+          
+                          <li class="footer__list-item">
+                            <a href='https://www.instagram.com/cron_i_cron/' target="_blank" class="footer__column-link">
+                                <div class='social__icon_body'>
+                                    <img  class="footer__social-icon footer__social-icon_inst" src="./images/social_icons/inst.png" alt='inst'>
+                                </div>
+                            </a> 
+                          </li>
+                          <li class="footer__list-item">
+                            <a href='https://www.youtube.com/channel/UC5AAYhE6jMw5wZ8RUApQmvg?view_as=subscriber' target="_blank" class="footer__column-link"> 
+                                <div class='social__icon_body'>
+                                    <img  class="footer__social-icon footer__social-icon_youtube" src="./images/social_icons/yt.svg" alt='youtube'>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="footer__list-item">
+                            <a href='https://t.me/crondev' target="_blank" class="footer__column-link"> 
+                                <div class='social__icon_body'>
+                                    <img  class="footer__social-icon footer__social-icon_telegram" src="./images/social_icons/tg.svg" alt='telegram'>
+                                </div>
+                            </a>
+                          </li> 
+                        </ul>
+                      </nav> 
+                </div>
+            </footer>
+            <button onclick="topFunction()" id="myBtn" class='goup__arrow' title="Go to top">&#8593;</button>
+        </div>
+
+         <!--AJAX СКРИПТ ДЛЯ ФОРМЫ-->
+         <script>
+            $(document).ready(function() {
+                $('.form_sub').click(function(){
+                    $.ajax({
+                        type: "POST", //указываем что метод отправки POST
+                        url:"form.php", // указываем адрес обработчика
+                        data:$('.form_modal_window').serialize(), //указываем данные которые будут передаваться обработчику
+                      /* Мы указываем id формы - $('#callbacks'), и методом serialize() забираем значения всех полей. */
+                        error:function(){$("#erconts").html("Произошла ошибка!");},
+                      /* если произойдет ошибка в элементе с id erconts выведется сообщение*/
+                        beforeSend: function() {
+                            $("#erconts").html("<p style='color: orangered;'>Отправляем данные...</p>");
+                        },
+                        success: function(result){
+                          /* В случае удачной обработки и отправки выполнится следующий код*/
+                            $('#erconts').html(result);
+                            checkThis();
+                        }
+                    });
+                    return false;
+                });
+            });
+        </script>
+        
+        <script src="./goup.js"></script>
+        <script src="./pan.js"></script>
+        <script src="./app.js"></script>
+        <script src='SliderCarusel.js'></script>
+        <script src='SliderCaruseltrast.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./mail/js/mail.js"></script>
+        <script src="./button.js"></script>
+        <script src="./button_facts.js"></script>
+        <script src="./button_fix.js"></script>
+        <script src="./button_full_time.js"></script>
+
+    </body>
+
+</html>
